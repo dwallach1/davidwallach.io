@@ -1,8 +1,34 @@
 body {
 	background-color: #36454f;
+	height: 100%;
+	font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
 }
 
 #name {
+
 	color: #E5E5D8;
-	margin: center;
+	font-size: 4em;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+ 
+}
+
+#title {
+	color: #f4c20d;
+	margin: auto;
+	margin-top: -40px;
+	text-align: center;
+
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
