@@ -1,9 +1,8 @@
 
 document.addEventListener('DOMContentLoaded',function(event){
 
-  setTimeout(function() {console.log("");}, 3000)
   // array with texts to type in typewriter
-  var dataText = [ "Entrepreneur.", "Adventurer.", "Data scientist.", "Software engineer @ Qualtrics."];
+  var dataText = [ "entrepreneur.", "adventurer.", "data enthusiast.", "software engineer.", "david wallach."];
   
   // type one text in the typwriter
   // keeps calling itself until the text is finished
@@ -11,7 +10,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     // chekc if text isn't finished yet
     if (i < (text.length)) {
       // add next character to h1
-     document.querySelector("h2").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+     document.querySelector("h2").innerHTML = text.substring(0, i+1) +'<span id="titlejs" aria-hidden="true"></span>';
 
       // wait for a while and call this function again for next character
       setTimeout(function() {
@@ -36,6 +35,7 @@ document.addEventListener('DOMContentLoaded',function(event){
       // text exists! start typewriter animation
      typeWriter(dataText[i], 0, function(){
        // after callback (and whole text has been animated), start next text
+       if (i == 4) { return; }
        StartTextAnimation(i + 1);
      });
     }
@@ -43,5 +43,28 @@ document.addEventListener('DOMContentLoaded',function(event){
   // start the text animation
   StartTextAnimation(0);
 });
+
+
+
+setTimeout(function(){
+    document.getElementById('hoja1').style.visibility = "visible";
+    document.getElementById('res-download').style.visibility = "visible";
+  },10500);
+
+setTimeout(function(){
+    document.getElementById('hoja2').style.visibility = "visible";
+  },12000);
+
+
+setTimeout(function(){
+    document.getElementById('hoja3').style.visibility = "visible";
+  },14000);
+
+
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+
 
 

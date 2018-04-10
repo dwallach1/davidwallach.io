@@ -3,24 +3,28 @@
 <head>
 	<title>David Wallach</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 
-	<div id="landing">
+	<section id="landing-page">
+		<div id="landing">
 
-		<h1 id="name">David Wallach</p>
-		<h2 id="title">
-	  		<!-- <a href="" id="title" class="typewrite" data-period="2000" data-type='[  "Software Engineer @ Qualtrics.",
-				  																	 "Adventurer.", 
-				  																	 "Entrepreneuer.",
-				  																	 "Data Scientist."
-	  																			]'>
-	    	<span class="wrap"></span>
-	  		</a> -->
-		</h2>
+			<h2 id="title"></h2>
+			
+			<div id="res-download">
+				<a href="static/resume.pdf" id="dwnld" download="resume">Resumè</a>
+			</div>
+			
+			<!-- Taken from: https://codepen.io/fixcl/pen/lvCFr?editors=1100 -->
+			<div class="hoja hoja1" id="hoja1" ></div>
 
-	</div>
+			<div class="hoja hoja2" id=hoja2 onclick="openInNewTab('https://github.com/dwallach1');">Projects</div>
+			<div class="hoja hoja3" id=hoja3 onclick="openInNewTab('https://www.kaggle.com/davidwallach');">Kaggle</div>
+
+		</div>
+	</section>
 
 </body>
 
